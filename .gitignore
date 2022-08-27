@@ -20,5 +20,6 @@
 
 .idea
 
+*.sh
 /scripts/
 /gsi/
