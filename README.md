@@ -1,14 +1,13 @@
-# STAT 215A, Fall 2021
+# STAT 215A, Fall 2022
 
-This is the github repository for STAT 215A, Fall 2021.
+This is the github repository for STAT 215A, Fall 2022.
 
-Thanks to James Duncan, Tiffany Tang, Zoe Vernon, Rebecca Barter, and other past GSI's for
+Thanks to Omer Ronen, James Duncan, Tiffany Tang, Zoe Vernon, Rebecca Barter, and other past GSI's for
 sharing their material with me. This document was originally written by Rebecca
 for STAT 215A in the Fall of 2017 and has been slightly modified in subsequent
 years.
 
-Questions and discussions between students can be posted on Piazza ([signup
-link](https://piazza.com/berkeley/fall2021/stat215a)). That way everyone else
+Questions and discussions between students can be posted on Ed Discussions (signup link on bCourses). That way everyone else
 can see your questions and the answers, and we don't have to answer the same
 questions a million billion times. Preferably you will answer each other's
 questions. It is our intention to only jump in when the question is one that
@@ -25,21 +24,21 @@ Questions asking about clarifications are fine.
 
 **Lectures**:
 
-Tuesdays & Thursdays, 11-12:30, Zoom
+Tuesdays & Thursdays, 12:30-2:00pm, Dwinelle 219
 
 **Labs**:
 
-Fridays, 11-1, Evans 334
+Fridays, 9-11am, Evans 344
 
 [comment]: <> (**Office Hours**:)
 
-[comment]: <> (*Bin*: Tuesdays 1:30-2:30, Thursdays 1-2, Zoom)
+[comment]: <> (*Bin*: TBA)
 
-[comment]: <> (*Omer*: Mondays 2-4, Thursdays 2-4, Zoom)
+[comment]: <> (*Theo*: TBA)
 
 # Class website
 
-bCourses and https://yu-group.github.io/stat-215a-fall-2021/
+bCourses and https://yu-group.github.io/stat-215a-fall-2022/
 
 # Useful resources
 
@@ -71,7 +70,7 @@ While you are allowed to discuss the projects with one another, each student mus
 
 [comment]: <> (|--------------------------------|---------------|-------------------------|----------------------------|)
 
-[comment]: <> (| Redwood trees                  | September 3   | September 16 &#40;2 weeks&#41; | September 26               |)
+[comment]: <> (| ER PECARN data cleaning        | September 3   | September 16 &#40;2 weeks&#41; | September 26               |)
 
 [comment]: <> (| Linguistic Survey              | September 24  | October 07 &#40;2 weeks&#41;    | October 17                 |)
 
@@ -81,7 +80,7 @@ While you are allowed to discuss the projects with one another, each student mus
 
 [comment]: <> (| Cloud detection &#40;group project&#41;| October 29 | November 12 &#40;2 weeks&#41;   | &#40;graded by Omer&#41;        |)
 
-[comment]: <> (| Covid-19 &#40;final project&#41;   | November 13   | December 04 &#40;3 weeks&#41;   | &#40;graded by Omer&#41;        |)
+[comment]: <> (| ER PECARN data &#40;final project&#41;   | November 13   | December 04 &#40;3 weeks&#41;   | &#40;graded by Omer&#41;        |)
 
 
 
@@ -116,9 +115,9 @@ Your report and code will be submitted via GitHub. The following instructions wi
 
 Once you have completed these first steps, you are then ready to create your private GitHub repository for this class.
 
-1. Locally on your machine, clone my stat-215-a repository: `git clone https://github.com/OmerRonen/stat-215-a`. This will create a copy of the repository on your own computer.
+1. Locally on your machine, clone my stat-215-a repository: `git clone https://github.com/theo-s/stat-215-a`. This will create a copy of the repository on your own computer.
 
-1. On the GitHub website, log in and create a **private** remote repository called *stat-215-a*. Add me (*OmerRonen*) as a collaborator for this repository (check out settings on the repo website).
+1. On the GitHub website, log in and create a **private** remote repository called *stat-215-a*. Add me (*theo-s*) as a collaborator for this repository (check out settings on the repo website).
 
 1. Back in the terminal, change directories to the stat-215-a folder and set the origin of your local repository to be the remote repository that you just made: `git remote set-url origin https://github.com/USERNAME/stat-215-a.git` (Change USERNAME below to your username). This tells git which remote repository to push your changes to when you `git push`.
 
