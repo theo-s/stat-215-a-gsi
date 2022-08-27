@@ -1,7 +1,8 @@
 ---
 title: "Lab 0"
 author: |
-  | Theo Saarinen (based on materials by Omer Ronen, James Duncan, Tiffany Tang, Zoe Vernon, Rebecca Barter, Yuval
+  | Theo Saarinen (based on materials by Omer Ronen, James Duncan, 
+  | Tiffany Tang, Zoe Vernon, Rebecca Barter, Yuval
   | Benjamini, Jessica Li, Adam Bloniarz, and Ryan Giordano)
 date: "Due 9/2/2022"
 output:
