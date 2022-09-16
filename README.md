@@ -81,15 +81,15 @@ Fridays, 9-11am, Evans 344
         url: "https://pubs.aeaweb.org/doi/pdfplus/10.1257/aer.100.2.573"
       - name: "\"Does high public debt consistently stifle economic growth?\" (Herndon, Ash, & Pollin, 2014)"
         url: "https://academic.oup.com/cje/article-abstract/38/2/257/1714018"
-      - name: "\"Superheat\" (Barter & Yu, 2018)"
-        url: https://www.tandfonline.com/doi/full/10.1080/10618600.2018.1473780
-      - name: "Seeing is Believing: 5 Studies about Visual Information Processing"
-        url: "https://piktochart.com/blog/5-psychology-studies-that-tell-us-how-people-perceive-visual-information/"
   - date: Thu 09/15
     content: "Lecture 7: Prediction and assessment (Part 2)"
     readings:
       - name: "\"What's Wrong with Social Science and How to Fix It: Reflections After Reading 2578 Papers\""
         url: "https://fantasticanachronism.com/2020/09/11/whats-wrong-with-social-science-and-how-to-fix-it/"
+      - name: Principal Component Analyses (PCA)-based findings in population genetic studies are highly biased and must be reevaluated
+        url: "https://www.nature.com/articles/s41598-022-14395-4"
+      - name: Systematizing Confidence in Open Research and Evidence (SCORE)
+        url: "https://www.darpa.mil/program/systematizing-confidence-in-open-research-and-evidence"
   - date: Fri 09/16
     content: "Section 3: TBA"
 - Week 5
