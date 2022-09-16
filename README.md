@@ -30,11 +30,247 @@ Tuesdays & Thursdays, 12:30-2:00pm, Dwinelle 219
 
 Fridays, 9-11am, Evans 344
 
-[comment]: <> (**Office Hours**:)
+(**Office Hours**:)
 
-[comment]: <> (*Bin*: TBA)
+(*Bin*: TBA)
 
-[comment]: <> (*Theo*: TBA)
+(*Theo*: Thursday 11:00-12:30pm, Friday 11:00-12:00pm, Evans 444)
+
+# Reading Schedule
+
+- Week 1
+  - date: Thu 08/25
+    content: "Lecture 1: Introductions"
+  - date: Fri 08/26
+    content: "Section 0: Git / GitHub + R / Tidyverse"
+    assignments:
+      - name: "Lab 0: GitHub setup + practice submission"
+        due: 09/02
+- Week 2
+  - date: Tue 08/30
+    content: "Lecture 2: Problem Formulation"
+    readings:
+      - name: "\"The Future of Data Analysis\" (Tukey, 1962) [please skim]"
+        url: https://www.jstor.org/stable/2237638
+      - name: "\"Science and Statistics\" (Box, 1976)"
+        url: https://www.jstor.org/stable/2286841
+      - name: "\"Veridical data science\" (Yu and Kumbier, 2020)"
+        url: https://www.pnas.org/content/117/8/3920
+  - date: Thu 09/01
+    content: "Lecture 3: Exploratory Data Analysis (EDA)"
+  - date: Fri 09/02
+    content: "Section 1: Workflow + Rmd + Latex + R Tricks + Lab 1"
+    assignments:
+      - name: Lab 0 due
+        url:
+      - name: "Lab 1: PECARN data assigned"
+        due: 09/23 at 11:59pm
+- Week 3
+  - date: Tue 09/06
+    content: "Lecture 4: EDA (Part 2)"
+  - date: Thu 09/08
+    content: "Lecture 5: EDA (Part 3)"
+  - date: Fri 09/09
+    content: "Section 2: Advanced visualization techniques"
+    
+- Week 4
+  - date: Tue 09/13
+    content: "Lecture 6: Prediction and assessment"
+    readings:
+      - name: "\"Growth in a Time of Debt\" (Reinhart & Rogoff, 2010)"
+        url: "https://pubs.aeaweb.org/doi/pdfplus/10.1257/aer.100.2.573"
+      - name: "\"Does high public debt consistently stifle economic growth?\" (Herndon, Ash, & Pollin, 2014)"
+        url: "https://academic.oup.com/cje/article-abstract/38/2/257/1714018"
+      - name: "\"Superheat\" (Barter & Yu, 2018)"
+        url: https://www.tandfonline.com/doi/full/10.1080/10618600.2018.1473780
+      - name: "Seeing is Believing: 5 Studies about Visual Information Processing"
+        url: "https://piktochart.com/blog/5-psychology-studies-that-tell-us-how-people-perceive-visual-information/"
+  - date: Thu 09/15
+    content: "Lecture 7: Prediction and assessment (Part 2)"
+    readings:
+      - name: "\"What's Wrong with Social Science and How to Fix It: Reflections After Reading 2578 Papers\""
+        url: "https://fantasticanachronism.com/2020/09/11/whats-wrong-with-social-science-and-how-to-fix-it/"
+  - date: Fri 09/16
+    content: "Section 3: TBA"
+- Week 5
+  - date: Tue 09/20
+    content: "Lecture 8: Stability"
+    readings:
+      - name: "Stability-driven nonnegative matrix factorization to interpret spatial gene expression and build local gene networks (Wu et al. 2016)"
+        url: "https://www.pnas.org/content/113/16/4290"
+      - name: "\"Funes the Memorious\" (Borges, 1942)"
+        url: "http://vigeland.caltech.edu/ist4/lectures/funes%20borges.pdf"
+      - name: "\"Algebraic connectivity of graphs\" (Fiedler 1973)"
+        url: "https://doi.org/10.21136/CMJ.1973.101168"
+      - name: "\"Normalized Cuts and Image Segmentation\" (Shi and Malik, 2000)"
+        url: "https://people.eecs.berkeley.edu/~malik/papers/SM-ncut.pdf"
+  - date: Thu 09/22
+    content: "Lecture 9: Stability (Part 2)"
+  - date: Fri 09/23
+    content: "Section 4: TBA"
+    assignments:
+      - name: Lab 1 due at 11:59pm
+- Week 6
+  - date: Tue 09/27
+    content: "Lecture 10: Stability (Part 3)"
+    readings:
+      - name: "\"Minimum information about clinical artificial intelligence modeling: the MI-CLAIM checklist\" (Norgeot et al., 2020)"
+        url: "https://www.nature.com/articles/s41591-020-1041-y"
+      - name: "\"Regression Shrinkage and Selection via the Lasso\" (Tibshirani, 1996)"
+        url: "http://www.jstor.org/stable/2346178"
+      - name: "\"Ridge Regression: Biased Estimation for Nonorthogonal Problems\" (Hoerl & Kennard, 1970)"
+        url: "http://www.jstor.org/stable/1267351"
+      - name: "John Platt (1964) “Strong inference”, Science"
+        url: "https://science.sciencemag.org/content/146/3642/347/tab-pdf"
+      - name: "Rohe, Qin and Yu (2016) on directed spectral clustering, PNAS"
+        url: "https://www.pnas.org/content/pnas/113/45/12679.full.pdf"
+      - name: "Breiman (1995) paper on non-negative garrote, which motivated Lasso"
+        url: "https://www.jstor.org/stable/1269730?seq=1"
+      - name: "Elastic net paper by Zuo and Hastie (2005)"
+        url: "https://www.jstor.org/stable/3647580?seq=1"
+  - date: Thu 09/29
+    content: "Section 5: TBA"
+  - date: Fri 09/30
+    content: "Lecture 11: Stability (Part 4)"
+    readings:
+      - name: "Garrigues and El Ghaoui (2018) on on-line Lasso"
+        url: "http://papers.nips.cc/paper/3431-an-homotopy-algorithm-for-the-lasso-with-online-observations.pdf"
+      - name: "Nishimoto et al (2011) on movie reconstruction"
+        url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3326357/"
+- Week 7
+  - date: Tue 10/04
+    content: "Lecture 12: Sources of randomness"
+    readings:
+      - name: "Notes on Ridge Regression by van Wieringen"
+        url: "https://arxiv.org/pdf/1509.09169.pdf"
+      - name: "UCERF3: A New Earthquake Forecast for California’s Complex Fault System"
+        url: "https://pubs.usgs.gov/fs/2015/3009/pdf/fs2015-3009.pdf"
+      - name: "Contributions to the mathematical theory of evolution (Pearon 1983)"
+        url: "https://royalsocietypublishing.org/doi/10.1098/rsta.1894.0003"
+      - name: "\"Remarks on nonparametric estimates of a density function\" Rosenblatt (1956)"
+        url: "https://projecteuclid.org/download/pdf_1/euclid.aoms/1177728190"
+  - date: Thu 10/06
+    content: "Lecture 13: Sources of randomness (Part 2)"
+    readings:
+      - name: "Saltelli et al (2020) on five ways to ensure models serve society"
+        url: "https://www.nature.com/articles/s41599-020-00557-0"
+    assignments:
+      - name: Lab 2 due at 11:59pm
+  - date: Fri 10/07
+    content: "Section 6: Introduce Lab 3"
+  - date: Sun 10/09
+    assignments:
+      - name: Lab 2 Peer Review assigned
+        due: 10/17 at 11:59pm
+
+- Week 8
+  - date: Tue 10/11
+    content: "Section 7: TBA"
+    assignments:
+      - name: Lab 3 assigned
+        due: 10/26 at 11:59pm
+    readings:
+      - name: "Neyman (1923)"
+        url: "https://www.jstor.org/stable/2245382"
+      - name: "Rubin (1974)"
+        url: "http://www.fsb.muohio.edu/lij14/420_paper_Rubin74.pdf"
+      - name: "Lin (2013)"
+        url: "https://projecteuclid.org/euclid.aoas/1365527200"
+      - name: "Freedman book chapter 4: linear regression models"
+  - date: Thu 10/13
+    content: "Lecture 14: Sources of randomness (Part 3)"
+  - date: Fri 10/14
+    content: "Lecture 15: Bootstrap. Interpretation."
+    readings:
+      - name: "Freedman book chapter 5"
+      - name: "Risk Analysis of the Space Shuttle: Pre-Challenger"
+        url: "https://www.tandfonline.com/doi/abs/10.1080/01621459.1989.10478858"
+      - name: "Ali et al (2019) paper on facebook ad process"
+        url: "https://arxiv.org/abs/1904.02095"
+  - date: Sun 10/16
+    assignments:
+      - name: Lab 2 Peer Review due at 11:59pm
+- Week 9
+  - date: Tue 10/18
+    content: "Section 8: Midterm review"
+  - date: Thu 10/20
+    content: "Midterm Exam"
+  - date: Fri 10/21 (1-2:30pm)
+    content: "Lecture 17: Classification"
+- Week 10
+  - date: Tue 10/25
+    content: "Lecture 16: Bootstrap. Interpretation. (Part 2)"
+    assignments:
+      - name: Lab 3 due at 11:59pm
+  - date: Fri 10/28
+    content: "Section 9: Introduce Lab 4"
+- Week 11
+  - date: Mon 10/31
+    assignments:
+      - name: "Lab 4: Group Project assigned"
+        due: "11/19 at 11:59pm"
+  - date: Tue 11/01
+    content: "Lecture 18: Inference for logistic regression"
+    readings:
+      - name: "A Gentle Introduction to Risk-limiting Audits (Lindeman and Stark, 2012)"
+        url: "https://www.stat.berkeley.edu/~stark/Preprints/gentle12.pdf"
+      - name: "Do-no-harm playbook by Ripley and Kleinfeld (2020)"
+        url: "https://electionsos.com/resource/how-to-cover-electoral-conflict/"
+      - name: "SPRT Derivation (on bCourses)"
+  - date: Thu 11/03
+    content: "Lecture 19: Logistic regression, Exponential family"
+    readings:
+      - name: "Dobson Ch. 3-4"
+  - date: Fri 11/04
+    content: "Section 9: TBA"
+- Week 12
+  - date: Tue 11/08
+    content: "Lecture 20: Logistic regression, Exponential family (Part 2)"
+  - date: Thu 11/10
+    content: "Lecture 21: GLMs, Iteratively Reweighted Least Squares"
+    readings:
+      - name: "D. F. Freedman and D. Lane (1983) \"A Nonstochastic Interpretation of Reported Significance Levels\""
+        url: "https://www.jstor.org/stable/1391660"
+      - name: "D. F. Freedman (1995) Some issues in the foundation of statistics"
+        url: "https://link.springer.com/article/10.1007/BF00208723"
+  - date: Fri 11/11
+    content: "Section 10: TBA"
+    assignments:
+      - name: Final Project assigned
+        due: "12/10 at 11:59pm"
+      - name: "Lab 4 due at 11:59pm"
+- Week 13
+  - date: Tue 11/15
+    content: "Lecture 22: GLMs, Iteratively Reweighted Least Squares (Part 2)"
+  - date: Thu 11/17
+    readings:
+      - name: "Reread: \"Veridical data science\" (Yu and Kumbier, 2020)"
+        url: "https://www.pnas.org/content/117/8/3920"
+      - name: "Dwivedi et al. (2020) Stable discovery of interpretable subgroups via calibration in causal studies"
+        url: "https://arxiv.org/pdf/2008.10109.pdf"
+    content: "Lecture 23: Statistical Inference. PCS inference."
+  - date: Fri 11/18
+    content: "Section 11: Intro to COVID-19 data (guest speaker Tiffany Tang)"
+- Week 14
+  - date: Tue 11/22
+    content: "Lecture 24: Statistical Inference. PCS inference. (Part 2)"
+  - date: Thu 11/24
+    content: "Thanksgiving Break"
+  - date: Fri 11/25
+    content: "Thanksgiving Break"
+- Week 15
+  - date: Tue 11/29
+    content: "Lecture 25: Advanced topics"
+  - date: Thu 12/01
+    content: "Lecture 26: Advanced topics (Part 2)"
+  - date: Fri 12/02
+    content: "Extra OH"
+- Week RRR
+  - date: Fri 12/09
+    assignments:
+      - name: Final Project due at 11:59pm
+  
+
 
 # Class website
 
