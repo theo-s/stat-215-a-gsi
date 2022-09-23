@@ -101,7 +101,7 @@ Fridays, 9-11am, Evans 344
       - name: "\"Funes the Memorious\" (Borges, 1942)"
         url: "http://vigeland.caltech.edu/ist4/lectures/funes%20borges.pdf"
       - name: "\"Algebraic connectivity of graphs\" (Fiedler 1973)"
-        url: "https://doi.org/10.21136/CMJ.1973.101168"
+        url: "http://snap.stanford.edu/class/cs224w-readings/fiedler73connectivity.pdf"
       - name: "\"Normalized Cuts and Image Segmentation\" (Shi and Malik, 2000)"
         url: "https://people.eecs.berkeley.edu/~malik/papers/SM-ncut.pdf"
   - date: Thu 09/22
