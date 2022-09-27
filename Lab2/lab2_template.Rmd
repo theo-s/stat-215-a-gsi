@@ -1,0 +1,50 @@
+---
+title: "Lab 2 - Linguistics Data, Stat 215A, Fall 2022"
+author: "Your Name"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+header-includes:
+   - \usepackage{float}
+output: 
+  pdf_document: 
+    number_sections: yes
+---
+```{r setup, include=FALSE}
+library(maps)
+library(ggplot2)
+library(dplyr)
+library(viridis)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r load_data, include = FALSE}
+ling_data <- read.table('data/lingData.txt', header = T)
+ling_location <- read.table('data/lingLocation.txt', header = T)
+# question_data contains three objects: quest.mat, quest.use, all.ans
+load("data/question_data.RData")
+```
+
+
+# Plotting Map Data
+
+An example of how to plot data over a map.
+
+```{r example_plotting, echo=FALSE, fig.cap="Plotting the total number of responses to the survey by each locality", out.height="30%", fig.align="center", fig.show="asis"}
+state_df <- map_data("state")
+my_map_theme <- theme_void()
+
+ling_location %>%
+  filter(Longitude > -125, Number.of.people.in.cell > 2) %>%
+  ggplot() +
+  geom_tile(aes(x = Longitude, y = Latitude,
+                color = log10(Number.of.people.in.cell), fill = log10(Number.of.people.in.cell))) +
+  scale_fill_viridis()+
+  scale_color_viridis()+
+  labs(fill = "Number of Responses \n (Log scale)",color = "Number of Responses \n (Log scale)")+
+  geom_polygon(aes(x = long, y = lat, group = group),
+               data = state_df, colour = "black", fill = NA) +
+  my_map_theme
+
+
+```
