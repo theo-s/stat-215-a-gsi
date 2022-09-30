@@ -38,7 +38,7 @@ ling_location %>%
   filter(Longitude > -125, Number.of.people.in.cell > 2) %>%
   ggplot() +
   geom_tile(aes(x = Longitude, y = Latitude,
-                color = log10(Number.of.people.in.cell), fill = log10(Number.of.people.in.cell))) +
+                color = sqrt(Number.of.people.in.cell), fill = log10(Number.of.people.in.cell))) +
   scale_fill_viridis()+
   scale_color_viridis()+
   labs(fill = "Number of Responses \n (Log scale)",color = "Number of Responses \n (Log scale)")+
