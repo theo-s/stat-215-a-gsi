@@ -1,0 +1,156 @@
+---
+title: "Ordinary Least Squares"
+author: "Theo Saarinen"
+format: revealjs
+editor: visual
+knitr:
+  opts_knit:
+    root.dir: "~/Desktop/ols_markdown"
+editor_options: 
+  chunk_output_type: console
+---
+
+## Setup
+
+Suppose we observe data $X \in \mathbb{R}^d$, and outcomes $y \in \mathbb{R}$. Assume that $X^T X$ is full rank and that $y$ is not in the span of the columns of $X$. Let $\hat \beta$ denote the ordinary least squares solution.
+
+## Interpreting Ordinary Least Squares
+
+We have already seen how to solve the OLS problem in two ways:
+
+1.  Closed form solution $\hat \beta = \left(X^TX \right)^{-1}X^T y$
+
+2.  Iteratively through gradient descent
+
+    1.  Start at some $\beta_0$
+
+    2.  Update each step $\beta_{t+1}=\beta_t-\eta\left({X}^{\top} {X} \beta_t-{X}^{\top} {y}\right)$
+
+## Interpret OLS as a Projection
+
+\[![ols](ols.png){width="1495"}\]
+
+## How can we see this?
+
+The OLS projection, $X \hat \beta$ finds the projection of the vector $y$ onto the span of the columns of $X$ that minimizes the euclidean distance between $X \hat \beta$ and $y$.
+
+## Projection Matrix
+
+The error vector $\epsilon := y - X\hat \beta$ is orthogonal to the projection of $y$, $X \hat \beta$.
+
+## Orthogonality of Residuals
+
+1.  Intuitively, any projection resulting in a non orthogonal projection will have higher error than the OLS projection.
+
+## Visually
+
+\[![ols](ols_alternate.png){width="1495"}\]
+
+$$X_e = \mathbb{E}\left[\right]  $$
+
+## Orthogonality of Residuals
+
+2.  Mathematically: \begin{align}
+      \epsilon^T X  &= X^T  (y - X\hat \beta)\\
+      &= X^T y - X^T X \left(X^T X \right)^{-1}X^T y\\
+      &= X^T y - X^T y
+      &= 0
+      \end{align} Since $\epsilon$ is orthogonal to all columns of $X$, it is also orthogonal to all linear combinations of columns in $X$, notably $X \hat \beta$
+
+## The Projection Matrix
+
+With this interpretation of OLS, we can examine how $y$ is projected into the column space of $X$.
+
+## The Projection Matrix
+
+OLS Projection: $$
+X \hat \beta =  \underbrace{X \left(X^TX \right)^{-1}X^T}_{Matrix \in \mathbb{R}^{n\times n}} \underbrace{y}_{y}
+$$ This means the OLS projection is some matrix multiplied by the outcome $y$.
+
+## The Hat Matrix
+
+This matrix is in fact a projection matrix that will project any vector to the row space of $X$.
+
+Define the Hat matrix: $$
+H := X \left(X^TX \right)^{-1}X^T
+$$
+
+## The Hat Matrix
+
+Since $H$ is a projection matrix, it will be idempotent, meaning $H^2 = H$. Why?
+
+1.  Intuitively, if $H$ projects a vector to some space, then projecting the vector a second time shouldn't change the vector once it is already projected into the space. So for any vector $v$, we should have $H^2 v = H v$.
+
+2.  Mathematically: \begin{align}
+     H^2 &= X \left(X^TX \right)^{-1}X^T X \left(X^TX \right)^{-1}X^T\\
+     &=  X \left(X^TX \right)^{-1} X^T\\
+     &= H
+     \end{align}
+
+## What Can we Learn from the Hat Matrix?
+
+1.  $H X$ = $X$
+
+2.  The eigenvalues of $H$ are either 1 or 0. The set of eigenvectors with eigenvalue 1 span the columns of $X$.
+
+3.  Say $y$ has some covariance matrix $\Sigma$, then $X \hat \beta$ has the covariance matrix $H^T \Sigma H$.
+
+4.  The diagonal entries of $H$ give the leverage of that observation.
+
+## Leverage Scores
+
+Define the $i$th leverage score as: \begin{align}
+h_{ii} &:= H[i,j]\\
+       &= x_i (X^T X)^{-1} x_i^T
+\end{align}
+
+## Leverage Scores
+
+Intuitively, the leverage score measures how different $x_i$ is from the average $x_i$. (It can be shown that it is the scaled Mahalanobis distance for $x_i$, a generalization of distance in Z-space)
+
+Mathematically (you should prove this): $$
+h_{ii} = \frac{\partial \hat{y_i}}{\partial y}
+$$
+
+## Leverage Scores
+
+This gives us the opportunity to exploit this to calculate the leave-one-out error, predictions, and coefficients in a computationally feasible way for OLS ($O(n p^2)$).
+
+## Leverage Scores in R
+
+```{r, echo=TRUE}
+linear.model <- lm(Sepal.Length ~., data = iris[1:25,-5])
+print(linear.model)
+
+influences <- influence(linear.model)
+print(names(influences))
+```
+
+## Leverage Scores in R
+
+```{r, echo=TRUE}
+library(ggplot2)
+library(dplyr)
+data.frame(hat = influences$hat) %>% 
+  ggplot(aes(x = hat))+
+  geom_histogram()+
+  theme_bw()+
+  labs(x = "Leverage Scores")
+```
+
+## Leverage Scores in R
+
+```{r, echo=TRUE}
+# Look at the point with the highest leverage score
+print(iris[which.max(influences$hat),-c(5)])
+print(colMeans(iris[1:25,-c(5)]))
+print(cor(iris[1:25,-c(1,5)]))
+```
+
+## Leverage Scores in R
+
+```{r, echo=TRUE}
+# Can see the difference in coefficients when observation 24 left out
+print(linear.model)
+print(linear.model$coefficients+influences$coefficients[24,])
+```
