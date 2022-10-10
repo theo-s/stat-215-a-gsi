@@ -5,7 +5,7 @@ format: revealjs
 editor: visual
 knitr:
   opts_knit:
-    root.dir: "~/Desktop/ols_markdown"
+    root.dir: "~/Desktop/stat-215-a-gsi/week6/ols_markdown"
 editor_options: 
   chunk_output_type: console
 ---
